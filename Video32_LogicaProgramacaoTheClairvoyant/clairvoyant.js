@@ -6,7 +6,43 @@ playBTN.addEventListener("click", () => {
     if (Tone.context.state !== "running") {
       Tone.start();
     }
-    synth.triggerAttackRelease("C4", "4n");
+    //synth.triggerAttackRelease("Eb3", "4n");
+    const synth = new Tone.Synth().toMaster();
+  const notes = [
+    "A1",
+    "A1",
+    "E2",
+    "A1",
+    "A1",
+    "E2",
+    "A1",
+    "A1",
+    "A1",
+    "D2",
+    "A1",
+    "A1",
+    "D2",
+    "C2#",
+    "A1",
+    "A1",
+    "A1",
+    "A1",
+    "A1",
+    "A1",
+    "A1",
+    "A1"
+  ];
+
+  const synthPart = new Tone.Sequence(
+    function(time, note) {
+      synth.triggerAttackRelease(note, "10hz", time);
+    },
+    notes,
+    "10n"
+  );
+
+  synthPart.start();
+  Tone.Transport.start();
   });
 
   playBTN2.addEventListener("click", () => {
