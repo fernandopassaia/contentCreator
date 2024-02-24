@@ -1,0 +1,85 @@
+{
+  "name": "@portugol-webstudio/ide",
+  "version": "0.0.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgadelha/Portugol-Webstudio.git"
+  },
+  "keywords": [
+    "portugol",
+    "webstudio"
+  ],
+  "author": "Douglas Gadêlha <dgadelha@live.com>",
+  "contributors": [
+    "Danilo Gadêlha <dngadelha@outlook.com>"
+  ],
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/dgadelha/Portugol-Webstudio/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/dgadelha/Portugol-Webstudio#readme",
+  "scripts": {
+    "start": "ng serve --disable-host-check",
+    "release": "ng build --base-href /Portugol-Webstudio/",
+    "watch": "ng build --watch --configuration development",
+    "lint": "ng lint"
+  },
+  "dependencies": {
+    "@angular/animations": "^17.0.8",
+    "@angular/cdk": "^17.0.4",
+    "@angular/common": "^17.0.8",
+    "@angular/compiler": "^17.0.8",
+    "@angular/core": "^17.0.8",
+    "@angular/fire": "^17.0.0",
+    "@angular/forms": "^17.0.8",
+    "@angular/material": "^17.0.4",
+    "@angular/platform-browser": "^17.0.8",
+    "@angular/platform-browser-dynamic": "^17.0.8",
+    "@angular/router": "^17.0.8",
+    "@materia-ui/ngx-monaco-editor": "^6.0.0",
+    "@portugol-webstudio/antlr": "*",
+    "@portugol-webstudio/parser": "*",
+    "@portugol-webstudio/resources": "*",
+    "@portugol-webstudio/runner": "*",
+    "@portugol-webstudio/runtime": "*",
+    "@sentry/angular-ivy": "^7.91.0",
+    "angular-split": "^17.1.1",
+    "angular-svg-icon": "^17.0.0",
+    "antlr4ts": "^0.5.0-alpha.4",
+    "assert": "^2.1.0",
+    "file-saver": "^2.0.5",
+    "firebase": "^10.7.1",
+    "monaco-editor": "^0.46.0",
+    "ng-keyboard-shortcuts": "^13.0.8",
+    "ngx-build-plus": "^17.0.0",
+    "ngx-google-analytics": "^14.0.1",
+    "rxfire": "^6.0.5",
+    "rxjs": "~7.8.1",
+    "text-encoding": "^0.7.0",
+    "tslib": "^2.6.2",
+    "util": "^0.12.5",
+    "zone.js": "~0.14.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.0.8",
+    "@angular-eslint/builder": "^17.1.1",
+    "@angular-eslint/eslint-plugin": "^17.1.1",
+    "@angular-eslint/eslint-plugin-template": "^17.1.1",
+    "@angular-eslint/schematics": "^17.1.1",
+    "@angular-eslint/template-parser": "^17.1.1",
+    "@angular/cli": "^17.0.8",
+    "@angular/compiler-cli": "^17.0.8",
+    "@types/file-saver": "^2.0.7",
+    "@types/text-encoding": "^0.0.39",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "angular-cli-ghpages": "^1.0.7",
+    "eslint": "^8.56.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.2.2"
+  }
+}
