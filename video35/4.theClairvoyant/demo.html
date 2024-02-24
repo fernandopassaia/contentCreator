@@ -50,6 +50,7 @@
             <div id="Selector"></div>
             <br/>
             <div id="Keyboard"></div>
+            <h2><button id="play-btn">Play The Clairvoyant</button></h2>
         </div>
 
     </div>
@@ -121,7 +122,10 @@
         keyboardUI.on('change', function(note) {
             console.log(Tone.Frequency(note.note, "midi").toNote());
             if (note.state === true) {
+                //current.triggerAttack(Tone.Frequency(note.note, "midi").toNote());
+
                 current.triggerAttack(Tone.Frequency(note.note, "midi").toNote());
+
             } else if (note.state === false) {
                 current.triggerRelease(Tone.Frequency(note.note, "midi").toNote());
             }
