@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="nprogress.css" type="text/css" />
     <!-- Document Title
 	============================================= -->
-    <title>ToneJS-Instruments Demo</title>
+    <title>The Clairvoyant Demo</title>
 
 </head>
 
@@ -45,8 +45,8 @@
     <div id="content">
         <H3 id="loading">Loading...</H3>
         <div class="container">
-            <h1> Tone.js-Instruments</h1>
-            <p> Loads four random instruments from the list. Refresh for different instruments.</p>
+            <h1>The Clairvoyant</h1>
+            <p>Introduction using ToneJs.</p>
             <div id="Selector"></div>
             <br/>
             <div id="Keyboard"></div>
@@ -61,7 +61,7 @@
     <script>
         NProgress.start();
         // load samples / choose 4 random instruments from the list //
-        chooseFour = ['piano', 'bass-electric', 'bassoon', 'cello', 'clarinet', 'contrabass', 'flute', 'french-horn', 'guitar-acoustic', 'guitar-electric','guitar-nylon', 'harmonium', 'harp', 'organ', 'saxophone', 'trombone', 'trumpet', 'tuba', 'violin', 'xylophone']
+        chooseFour = ['bass-electric','guitar-electric']
         shuffle(chooseFour);
         chooseFour = chooseFour.slice(0, 4);
 

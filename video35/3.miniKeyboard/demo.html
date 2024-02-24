@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="nprogress.css" type="text/css" />
     <!-- Document Title
 	============================================= -->
-    <title>ToneJS-Instruments Demo</title>
+    <title>The Clairvoyant Demo</title>
 
 </head>
 
@@ -31,7 +31,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-
         }
 
         .container {
@@ -46,8 +45,8 @@
     <div id="content">
         <H3 id="loading">Loading...</H3>
         <div class="container">
-            <h1> Tone.js-Instruments</h1>
-            <p> (all instruments) </p>
+            <h1>The Clairvoyant</h1>
+            <p>Introduction using ToneJs.</p>
             <div id="Selector"></div>
             <br/>
             <div id="Keyboard"></div>
@@ -61,18 +60,18 @@
 
     <script>
         NProgress.start();
-        // load samples //
+        // load samples / choose 4 random instruments from the list //
+        chooseFour = ['bass-electric','guitar-electric']
+        shuffle(chooseFour);
+        chooseFour = chooseFour.slice(0, 4);
 
         var samples = SampleLibrary.load({
-            instruments: ['piano', 'bass-electric', 'bassoon', 'cello', 'clarinet', 'contrabass', 'flute', 'french-horn', 'guitar-acoustic', 'guitar-electric','guitar-nylon', 'harmonium', 'harp', 'organ', 'saxophone', 'trombone', 'trumpet', 'tuba', 'violin', 'xylophone'],
+            instruments: chooseFour,
             baseUrl: "samples/"
         })
 
-
-        // show keyboard on load //
         var current
-
-
+        // show keyboard on load //
         Tone.Buffer.on('load', function() {
             document.querySelector(".container").style.display = 'block';
             document.querySelector("#loading").style.display = 'none';
@@ -87,7 +86,7 @@
                 }
             }
 
-            current = samples['piano'];
+            current = samples[chooseFour[0]];
 
             select.on('change', function(v) {
                 current = samples[v.value];
@@ -95,9 +94,9 @@
 
 
         })
-
+        // show error message on loading error //
         Tone.Buffer.on('error', function() {
-            document.querySelector("#loading").innerHTML = "I'm sorry, there has been an error loading the samples. This demo works best on on the most up-to-date version of Chrome.";
+            document.querySelector("#loading").innerHTML = "I'm sorry, there has been an error loading the samples.";
         })
 
 
@@ -127,6 +126,17 @@
                 current.triggerRelease(Tone.Frequency(note.note, "midi").toNote());
             }
         })
+
+        // Shuffle function //
+        function shuffle(a) {
+            var j, x, i;
+            for (i = a.length - 1; i > 0; i--) {
+                j = Math.floor(Math.random() * (i + 1));
+                x = a[i];
+                a[i] = a[j];
+                a[j] = x;
+            }
+        }
 
     </script>
 
