@@ -1,0 +1,15 @@
+/Users/fernandopassaia/Dev/contentCreator/video33/MinhaRotina/bin/Debug/net8.0/MinhaRotina
+/Users/fernandopassaia/Dev/contentCreator/video33/MinhaRotina/bin/Debug/net8.0/MinhaRotina.deps.json
+/Users/fernandopassaia/Dev/contentCreator/video33/MinhaRotina/bin/Debug/net8.0/MinhaRotina.runtimeconfig.json
+/Users/fernandopassaia/Dev/contentCreator/video33/MinhaRotina/bin/Debug/net8.0/MinhaRotina.dll
+/Users/fernandopassaia/Dev/contentCreator/video33/MinhaRotina/bin/Debug/net8.0/MinhaRotina.pdb
+/Users/fernandopassaia/Dev/contentCreator/video33/MinhaRotina/obj/Debug/net8.0/MinhaRotina.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fernandopassaia/Dev/contentCreator/video33/MinhaRotina/obj/Debug/net8.0/MinhaRotina.AssemblyInfoInputs.cache
+/Users/fernandopassaia/Dev/contentCreator/video33/MinhaRotina/obj/Debug/net8.0/MinhaRotina.AssemblyInfo.cs
+/Users/fernandopassaia/Dev/contentCreator/video33/MinhaRotina/obj/Debug/net8.0/MinhaRotina.csproj.CoreCompileInputs.cache
+/Users/fernandopassaia/Dev/contentCreator/video33/MinhaRotina/obj/Debug/net8.0/MinhaRotina.sourcelink.json
+/Users/fernandopassaia/Dev/contentCreator/video33/MinhaRotina/obj/Debug/net8.0/MinhaRotina.dll
+/Users/fernandopassaia/Dev/contentCreator/video33/MinhaRotina/obj/Debug/net8.0/refint/MinhaRotina.dll
+/Users/fernandopassaia/Dev/contentCreator/video33/MinhaRotina/obj/Debug/net8.0/MinhaRotina.pdb
+/Users/fernandopassaia/Dev/contentCreator/video33/MinhaRotina/obj/Debug/net8.0/MinhaRotina.genruntimeconfig.cache
+/Users/fernandopassaia/Dev/contentCreator/video33/MinhaRotina/obj/Debug/net8.0/ref/MinhaRotina.dll
